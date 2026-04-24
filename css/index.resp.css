@@ -1,0 +1,61 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar-nav .nav-link.active::before {
+    content: "";
+    flex-direction: column;
+    position: absolute;
+    width: 82%;
+    height: 2px;
+    top: 85%;
+    background-color: var(--main-light-color);
+    }
+
+    .right-section {
+        border-bottom-right-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+ }
+
+@media only screen and (max-width: 992px) {
+    div.dropdown-menu {
+    width: auto;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    }
+
+    .photo-container {
+        width: 30%;
+    }
+
+    .image-parent i:first-child {
+    left: 80%;
+    bottom: 90%;
+    }
+
+    .image-parent i:last-child {
+    top: 90%;
+    left: 12%;
+    }
+
+    .right-section {
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+
+}
